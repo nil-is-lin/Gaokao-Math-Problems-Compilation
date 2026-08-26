@@ -8,10 +8,9 @@
 
 本仓库 Fork 自 [DxAThing/Gaokao-Math-Problems-Compilation](https://github.com/DxAThing/Gaokao-Math-Problems-Compilation)。与上游相比，本仓库的主要改动包括：
 
-- 更新 `Compilation-answer.tex` 至最新版本
-- 补全 2024–2025 年试题及答案
-- 修复编译问题（增大 `buf_size`、清理损坏的辅助文件）
-- 更新 `styles.tex` 中的宏包配置
+- 补充 README 中的 Fork 信息
+- 新增 `dist/` 目录用于发布 PDF 打包说明
+- 编译生成 `Compilation-answer.pdf` 并发布至 GitHub Releases
 
 如需查看上游变更，请 [对比两个仓库](https://github.com/DxAThing/Gaokao-Math-Problems-Compilation/compare/main...nil-is-lin:main)。
 
