@@ -4,6 +4,17 @@
 
 成品 PDF（题目版与答案版）已通过 **GitHub Releases** 发布，可直接下载，无需本地编译；如需从源码自行构建，请参考下方「构建」说明。
 
+## Fork 信息
+
+本仓库 Fork 自 [DxAThing/Gaokao-Math-Problems-Compilation](https://github.com/DxAThing/Gaokao-Math-Problems-Compilation)。与上游相比，本仓库的主要改动包括：
+
+- 更新 `Compilation-answer.tex` 至最新版本
+- 补全 2024–2025 年试题及答案
+- 修复编译问题（增大 `buf_size`、清理损坏的辅助文件）
+- 更新 `styles.tex` 中的宏包配置
+
+如需查看上游变更，请 [对比两个仓库](https://github.com/DxAThing/Gaokao-Math-Problems-Compilation/compare/main...nil-is-lin:main)。
+
 ## 试题来源与致谢
 
 本仓库中**大部分试题的源头来自 [deekur/gaokaomath](https://github.com/deekur/gaokaomath)**，在此向原仓库作者及贡献者表示感谢。
