@@ -2,7 +2,7 @@
 
 本代码库包含生成题目版和答案版 PDF 所需的 LaTeX 源文件、索引、题图、重绘图源和布局表。
 
-代码库不提供成品 PDF，需按以下说明自行编译。
+成品 PDF（题目版与答案版）已通过 **GitHub Releases** 发布，可直接下载，无需本地编译；如需从源码自行构建，请参考下方「构建」说明。
 
 ## 试题来源与致谢
 
@@ -28,12 +28,20 @@ https://creativecommons.org/licenses/by-sa/4.0/
 
 完整许可说明见仓库根目录的 [`LICENSE`](./LICENSE) 文件及 Creative Commons 官方页面。
 
-## 构建
+## 成品 PDF 下载
+
+题目版与答案版 PDF 已在 **GitHub Releases** 中随发布版本提供，按版本下载即可，无需本地编译：
+
+- `Compilation.pdf` —— 题目版
+- `Compilation-answer.pdf` —— 答案版
+
+## 构建（从源码自行编译）
 
 环境需要：
 
 - TeX Live（含 XeLaTeX、latexmk 及 `styles.tex` 引用的宏包）
 - `SimSun`、`SimHei`、`KaiTi`、`Times New Roman` 字体
+- Go 工具链（**仅**在需要重新生成题图自动布局文件 `tools/typeset/generated_image_layout.tex` 时需要；该文件已随仓库提交，普通编译直接使用即可）
 
 ```bash
 make pdf
